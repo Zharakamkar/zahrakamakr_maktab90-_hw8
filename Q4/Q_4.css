@@ -1,0 +1,279 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+    font-size: 62.5%;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-size: 1.6rem;
+    font-family: sans-serif;
+}
+
+
+/* -------------------Header--------------------- */
+
+
+
+header {
+    padding: 3rem 0 1rem;
+    width: 100%;
+    background-color: #333333;
+    color: #fafafa;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+
+.p-head {
+    width: 70%;
+    line-height: 1.3rem;
+    margin: 2rem auto 1rem;
+}
+
+.btn {
+    color: #fafafa;
+    margin-top: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid #757272;
+    background-color: #333333;
+    cursor: pointer;
+    font-size: inherit;
+}
+
+@media all and (min-width:900px) {
+    header {
+        padding: 7rem 0 7rem;
+        width: 100%;
+        background-color: #333333;
+        color: #fafafa;
+        text-align: center;
+
+    }
+
+    .p-head {
+        width: 50%;
+        font-size: 1.4rem;
+        line-height: 2.3rem;
+        margin: 2rem auto 2rem;
+        font-size: 1.4rem;
+    }
+
+    .btn {
+        color: #fafafa;
+        padding: 1rem;
+        border: 1px solid #757272;
+        background-color: #333333;
+        cursor: pointer;
+    }
+}
+
+/* ----------------------top-section---------------------- */
+
+
+
+
+.top-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 4rem auto;
+
+}
+
+.top-section div p {
+    font-size: small;
+    text-align: center;
+}
+
+.top-section h3 {
+    font-size: 1.7rem;
+    margin-bottom: 2rem;
+
+}
+
+.top-section div {
+    width: 90%;
+    display: flex;
+    font-size: 1.5rem;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+@media all and (min-width:540px) {
+    .top-section h3 {
+        margin-bottom: 2rem;
+    }
+
+    .top-section div {
+        width: 90%;
+        display: flex;
+        margin-left: 1.5rem;
+        font-size: 1.5rem;
+        flex-wrap: nowrap;
+    }
+
+    .top-section div p {
+        font-size: 1.6rem;
+    }
+}
+
+@media all and (min-width:900px) {
+    .top-section div {
+        width: 50%;
+    }
+}
+
+/* --------------------article-card---------------------- */
+
+
+.article {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-content: center;
+    background-color: #333333;
+    padding: 3rem 2rem;
+    gap: 1.5rem;
+    margin: 0 auto;
+}
+
+.article-card {
+    background-color: #eaeaea;
+    padding: 2rem 1rem;
+    text-align: center;
+    font-size: 1.4rem;
+    line-height: 2rem;
+
+}
+
+
+.article-card h4 {
+    margin-bottom: 2rem;
+}
+
+@media all and (min-width:540px) {
+    .article {
+        display: grid;
+        grid-template-columns: repeat(2, 23rem);
+
+    }
+
+    .landscape {
+        grid-column-end: span 2;
+    }
+
+}
+
+@media all and (min-width:900px) {
+    .article {
+        display: grid;
+        grid-template-columns: repeat(3, 23rem);
+
+    }
+
+    .landscape {
+        grid-column-end: span 1;
+    }
+}
+
+/* ------------------------bottom-section----------------------- */
+
+
+.bottom-section {
+    padding: 3rem 0;
+    margin: 2rem auto;
+    text-align: center;
+    width: 90%;
+    font-size: small;
+}
+
+.bottom-section h3 {
+    margin-bottom: 2rem;
+}
+
+@media all and (min-width:540px) {
+    .bottom-section {
+        width: 60%;
+        font-size: medium;
+    }
+}
+
+@media all and (min-width:900px) {
+    .bottom-section {
+        width: 50%;
+    }
+}
+
+
+/* ----------------------info------------------------- */
+
+.info {
+    display: block;
+    color: #f8f8f8;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.contact-us {
+    background-color: #2590d4;
+    padding: 3rem;
+    line-height: 2rem;
+}
+
+.about-us {
+    background-color: #333333;
+    padding: 3rem;
+    line-height: 2rem;
+}
+
+.info div p,
+.info div h3 {
+    padding-bottom: 1.5rem;
+}
+
+@media all and (min-width:900px) {
+    .info {
+        display: flex;
+    }
+}
+
+/* -----------------------------footer---------------------------- */
+footer {
+    background-color: black;
+    color: #f8f8f8;
+    display: block;
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1rem;
+}
+
+footer p {
+    margin: 1rem 0;
+}
+
+.footer-span {
+    color: #2590d4;
+}
+
+@media all and (min-width:900px) {
+    footer {
+        padding: 2rem;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}
